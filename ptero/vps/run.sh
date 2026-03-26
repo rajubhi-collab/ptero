@@ -97,9 +97,9 @@ render_ui() {
     echo -e ""
 
     echo -e "  ${B_CYAN}  VIRTUALIZATION & TOOLS${NC}"
-    echo -e "  ${G}├─ ${W}[1]${NC} RDX/IDX Tool Setup         ${G}├─ ${W}[4]${NC} Panel Control Center"
-    echo -e "  ${G}├─ ${W}[2]${NC} Launch VM-1 (KVM Mode)     ${G}├─ ${W}[5]${NC} LXC/LXD Container Manager"
-    echo -e "  ${G}└─ ${W}[3]${NC} Launch VM-2 (No-KVM)       ${G}└─ ${W}[6]${NC} Docker Engine Setup"
+    echo -e "  ${G}├─ ${W}[1]${NC} RDX/IDX         ${G}├─ ${W}[4]${NC} Panel Control"
+    echo -e "  ${G}├─ ${W}[2]${NC} VM-1 (KVM Mode) ${G}├─ ${W}[5]${NC} LXC/LXD Manager"
+    echo -e "  ${G}└─ ${W}[3]${NC} VM-2 (No-KVM)   ${G}└─ ${W}[6]${NC} Docker"
     echo -e ""
     
     echo -e "  ${B_PURPLE}  SYSTEM EXIT${NC}"
