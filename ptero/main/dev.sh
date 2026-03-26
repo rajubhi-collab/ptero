@@ -73,7 +73,7 @@ while true; do
         2) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/panel/run.sh) ;;
         3) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/wings/run.sh) ;;
         4) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/tools/run.sh) ;;
-        5) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/thame/run.sh) ;;
+        5) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/thame/chang/dev.sh) ;;
         6) bash <(curl -s https://raw.githubusercontent.com/nobita329/The-Coding-Hub/refs/heads/main/srv/menu/System1.sh) ;;
         7) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/no-kvm/run.sh) ;;
         8|exit) 
