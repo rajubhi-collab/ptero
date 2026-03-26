@@ -60,10 +60,9 @@ render_ui() {
     echo -e "  ${B_PURPLE}  MAINTENANCE${NC}"
     echo -e "  ${G}└─ ${W}[4]${NC} Toolbox            ${B_RED}${NC}${BG_SHADE}${W} [9] SHUTDOWN ${NC}${B_RED}${NC}"
     
-    # Optimized Footer to avoid syntax errors
+# Optimized Footer to avoid syntax errors
 echo -e "\n  ${G}───────────────────────────────────────────────────────────────────────────${NC}"
 echo -n -e "  ${B_CYAN}➜${NC} ${W}Command${NC} ${G}[1-8]:${NC} " # Swapped () for [] to be safer
-
 }
 
 # --- CONTROLLER ---
