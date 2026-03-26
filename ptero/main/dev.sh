@@ -53,7 +53,7 @@ render_ui() {
     echo -e "  ${B_CYAN}  DEPLOYMENT SERVICES${NC}"
     echo -e "  ${G}├─ ${W}[1]${NC} VPS      ${G}├─ ${W}[5]${NC} Theme"
     echo -e "  ${G}├─ ${W}[2]${NC} Panel    ${G}├─ ${W}[6]${NC} System"
-    echo -e "  ${G}└─ ${W}[3]${NC} Wings    ${G}└─ ${W}[7]${NC}NO-KVM"
+    echo -e "  ${G}└─ ${W}[3]${NC} Wings    ${G}└─ ${W}[7]${NC} NO-KVM"
     echo -e ""
     
     echo -e "  ${B_PURPLE}  MAINTENANCE${NC}"
