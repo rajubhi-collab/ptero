@@ -51,13 +51,13 @@ render_ui() {
 
     # --- ACTION GRID (SEGMENTED) ---
     echo -e "  ${B_CYAN}  DEPLOYMENT SERVICES${NC}"
-    echo -e "  ${G}├─ ${W}[1]${NC} VPS      ${G}├─ ${W}[5]${NC} Theme Configurator"
-    echo -e "  ${G}├─ ${W}[2]${NC} Panel          ${G}├─ ${W}[6]${NC} System Optimizer"
-    echo -e "  ${G}└─ ${W}[3]${NC} Wings         ${G}└─ ${W}[7]${NC} No-KVM Virtualization"
+    echo -e "  ${G}├─ ${W}[1]${NC} VPS      ${G}├─ ${W}[5]${NC} Theme"
+    echo -e "  ${G}├─ ${W}[2]${NC} Panel    ${G}├─ ${W}[6]${NC} System"
+    echo -e "  ${G}└─ ${W}[3]${NC} Wings    ${G}└─ ${W}[7]${NC}NO-KVM"
     echo -e ""
     
     echo -e "  ${B_PURPLE}  MAINTENANCE${NC}"
-    echo -e "  ${G}└─ ${W}[4]${NC} Utility Toolbox            ${B_RED}${NC}${BG_SHADE}${W} [8] SHUTDOWN ${NC}${B_RED}${NC}"
+    echo -e "  ${G}└─ ${W}[4]${NC} Toolbox            ${B_RED}${NC}${BG_SHADE}${W} [8] SHUTDOWN ${NC}${B_RED}${NC}"
     
     # --- INTERACTIVE FOOTER ---
     echo -e "\n  ${G}───────────────────────────────────────────────────────────────────────────${NC}"
