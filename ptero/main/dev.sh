@@ -59,8 +59,8 @@ render_ui() {
     
     echo -e "  ${B_PURPLE}  MAINTENANCE${NC}"
     echo -e "  ${G}└─ ${W}[4]${NC} Toolbox            ${B_RED}${NC}${BG_SHADE}${W} [9] SHUTDOWN ${NC}${B_RED}${NC}"
-    
-    # fix please 
+
+# fix please 
 echo -e "\n  ${G}───────────────────────────────────────────────────────────────────────────${NC}"
 echo -ne "  ${B_CYAN}➜${NC} ${W}Command${NC} "
 
