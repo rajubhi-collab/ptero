@@ -1,11 +1,8 @@
 #!/bin/bash
 # ===========================================================
-# CODING HUB - OBSIDIAN NEXT GEN (v11.2 - Custom Banner)
-# Style: Segmented UI / Glass-Look / Nobita Edition
+# RAJBHAI - OBSIDIAN NEXT GEN (v11.2 - Custom Banner)
+# Style: Segmented UI / Glass-Look / RAJBHAI Edition
 # ===========================================================
-
-# --- 0. PRE-INITIALIZATION ---
-# Change hostname to Nobita before rendering
 
 # --- PRECISE COLORS ---
 B_BLUE='\033[1;38;5;33m'
@@ -37,13 +34,13 @@ render_ui() {
     echo -e " ${B_BLUE}${NC}${BG_SHADE}${W}   HOST: $CURRENT_HOST ${NC}${B_BLUE}${NC}  ${B_PURPLE}${NC}${BG_SHADE}${W}   $UPT ${NC}${B_PURPLE}${NC}  ${B_GREEN}${NC}${BG_SHADE}${W}   $DISK ${NC}${B_GREEN}${NC}"
     echo -e ""
 
-    # --- CUSTOM LARGE BANNER (GRADIENT EFFECT) ---
-    echo -e "${B_CYAN} ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗      ██╗  ██╗██╗   ██╗██████╗ ${NC}"
-    echo -e "${B_CYAN}██╔════╝██╔═══██╗██╔══██╗██║████╗  ██║██╔════╝      ██║  ██║██║   ██║██╔══██╗${NC}"
-    echo -e "${B_PURPLE}██║     ██║   ██║██║  ██║██║██╔██╗ ██║██║  ███╗     ███████║██║   ██║██████╔╝${NC}"
-    echo -e "${B_PURPLE}██║     ██║   ██║██║  ██║██║██║╚██╗██║██║   ██║     ██╔══██║██║   ██║██╔══██╗${NC}"
-    echo -e "${GOLD}╚██████╗╚██████╔╝██████╔╝██║██║ ╚████║╚██████╔╝     ██║  ██║╚██████╔╝██████╔╝${NC}"
-    echo -e "${GOLD} ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝      ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ${NC}"
+    # --- CUSTOM LARGE BANNER: RAJBHAI ---
+    echo -e "${B_CYAN} ██████╗  █████╗      ██╗██████╗ ██╗  ██╗ █████╗ ██╗ ${NC}"
+    echo -e "${B_CYAN} ██╔══██╗██╔══██╗     ██║██╔══██╗██║  ██║██╔══██╗██║ ${NC}"
+    echo -e "${B_PURPLE} ██████╔╝███████║     ██║██████╔╝███████║███████║██║ ${NC}"
+    echo -e "${B_PURPLE} ██╔══██╗██╔══██║██   ██║██╔══██╗██╔══██║██╔══██║██║ ${NC}"
+    echo -e "${GOLD} ██║  ██║██║  ██║╚█████╔╝██████╔╝██║  ██║██║  ██║██║ ${NC}"
+    echo -e "${GOLD} ╚═╝  ╚═╝╚═╝  ╚═╝ ╚════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ${NC}"
     
     echo -e "  ${G}───────────────────────────────────────────────────────────────────────────${NC}"
     
@@ -80,7 +77,7 @@ while true; do
         6) bash <(curl -s https://raw.githubusercontent.com/nobita329/The-Coding-Hub/refs/heads/main/srv/menu/System1.sh) ;;
         7) bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh) ;;
         8|exit) 
-            echo -e "\n  ${B_RED}DISCONNECTED.${NC} Goodbye, Nobita."
+            echo -e "\n  ${B_RED}DISCONNECTED.${NC} Goodbye, RAJBHAI."
             exit 0 ;;
         *) 
             echo -e "  ${B_RED}Error: Input Invalid!${NC}"
