@@ -1,4 +1,5 @@
 #!/bin/bash
+# THE BEST SCRIPT
 # ===========================================================
 # RAJBHAI - OBSIDIAN NEXT GEN (v11.2 - Custom Banner)
 # Style: Segmented UI / Glass-Look / RAJBHAI Edition
