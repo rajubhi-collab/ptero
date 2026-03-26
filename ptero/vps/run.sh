@@ -1,12 +1,12 @@
 #!/bin/bash
 # ===========================================================
 # DEV ENVIRONMENT MANAGER - OBSIDIAN NEXT GEN (v11.4)
-# Style: Full Segmented UI / Nobita Edition / Multi-Menu
+# Style: Full Segmented UI / RAJBHAI Edition / Multi-Menu
 # ===========================================================
 
 # --- 0. PRE-INITIALIZATION ---
-# Hostname badalna sabse pehle
-hostnamectl set-hostname Nobita 2>/dev/null
+# Hostname updated to RAJBHAI
+hostnamectl set-hostname RAJBHAI 2>/dev/null
 
 # --- COLORS & STYLES ---
 B_BLUE='\033[1;38;5;33m'
@@ -36,15 +36,13 @@ get_metrics() {
     if [ -e /dev/kvm ]; then KVM_STATUS="${B_GREEN}ON${NC}"; fi
 }
 
-# --- SUB-MENU: PANEL CONTROL (SAME UI STYLE) ---
+# --- SUB-MENU: PANEL CONTROL ---
 panel_menu() {
     while true; do
         clear
         get_metrics
-        # Header
         echo -e " ${B_BLUE}${NC}${BG_SHADE}${W}   HOST: $CURRENT_HOST ${NC}${B_BLUE}${NC}  ${B_PURPLE}${NC}${BG_SHADE}${W}   $UPT ${NC}${B_PURPLE}${NC}"
         echo -e ""
-        # Sub-Menu Banner
         echo -e "  ${GOLD}██████╗  █████╗ ███╗   ██╗███████╗██╗     ${NC}"
         echo -e "  ${GOLD}██╔══██╗██╔══██╗████╗  ██║██╔════╝██║     ${NC}"
         echo -e "  ${GOLD}██████╔╝███████║██╔██╗ ██║█████╗  ██║     ${NC}"
@@ -81,26 +79,23 @@ panel_menu() {
 render_ui() {
     clear
     get_metrics
-    # Top Status Bar
     echo -e " ${B_BLUE}${NC}${BG_SHADE}${W}   HOST: $CURRENT_HOST ${NC}${B_BLUE}${NC}  ${B_PURPLE}${NC}${BG_SHADE}${W}   $UPT ${NC}${B_PURPLE}${NC}  ${B_GREEN}${NC}${BG_SHADE}${W} ⚙ KVM: $KVM_STATUS ${NC}${B_GREEN}${NC}"
     echo -e ""
 
-    # Big Custom Banner
-    echo -e "${B_CYAN} ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗      ██╗  ██╗██╗   ██╗██████╗ ${NC}"
-    echo -e "${B_CYAN}██╔════╝██╔═══██╗██╔══██╗██║████╗  ██║██╔════╝      ██║  ██║██║   ██║██╔══██╗${NC}"
-    echo -e "${B_PURPLE}██║     ██║   ██║██║  ██║██║██╔██╗ ██║██║  ███╗     ███████║██║   ██║██████╔╝${NC}"
-    echo -e "${B_PURPLE}██║     ██║   ██║██║  ██║██║██║╚██╗██║██║   ██║     ██╔══██║██║   ██║██╔══██╗${NC}"
-    echo -e "${GOLD}╚██████╗╚██████╔╝██████╔╝██║██║ ╚████║╚██████╔╝     ██║  ██║╚██████╔╝██████╔╝${NC}"
-    echo -e "${GOLD} ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝      ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ${NC}"
+    # NEW RAJBHAI ASCII BANNER
+    echo -e "${B_CYAN} ██████╗  █████╗      ██╗██████╗ ██╗  ██╗ █████╗ ██╗ ${NC}"
+    echo -e "${B_CYAN} ██╔══██╗██╔══██╗     ██║██╔══██╗██║  ██║██╔══██╗██║ ${NC}"
+    echo -e "${B_PURPLE} ██████╔╝███████║     ██║██████╔╝███████║███████║██║ ${NC}"
+    echo -e "${B_PURPLE} ██╔══██╗██╔══██║██   ██║██╔══██╗██╔══██║██╔══██║██║ ${NC}"
+    echo -e "${GOLD} ██║  ██║██║  ██║╚█████╔╝██████╔╝██║  ██║██║  ██║██║ ${NC}"
+    echo -e "${GOLD} ╚═╝  ╚═╝╚═╝  ╚═╝ ╚════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ${NC}"
     
     echo -e "  ${G}───────────────────────────────────────────────────────────────────────────${NC}"
     
-    # System Metrics
     echo -e "  ${W}System Vitality:${NC}"
     printf "  ${G}CPU:${NC} ${B_CYAN}%-4s${NC} ${G}RAM:${NC} ${B_PURPLE}%-4s${NC} ${G}Disk:${NC} ${B_GREEN}%-4s${NC}\n" "$CPU%" "$RAM%" "$DISK"
     echo -e ""
 
-    # Menu Options
     echo -e "  ${B_CYAN}  VIRTUALIZATION & TOOLS${NC}"
     echo -e "  ${G}├─ ${W}[1]${NC} RDX/IDX Tool Setup         ${G}├─ ${W}[4]${NC} Panel Control Center"
     echo -e "  ${G}├─ ${W}[2]${NC} Launch VM-1 (KVM Mode)     ${G}├─ ${W}[5]${NC} LXC/LXD Container Manager"
@@ -119,7 +114,7 @@ while true; do
     render_ui
     read -r opt
     case $opt in
-        1) # Setup IDX
+        1) 
            echo -e "\n  ${B_CYAN}🔧 Initializing RDX/IDX...${NC}"
            mkdir -p "$HOME/vm/.idx"
            cd "$HOME/vm/.idx" || return
@@ -162,7 +157,7 @@ EOF
         4) panel_menu ;;
         5) bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/vps/lxc.sh); pause ;;
         6) bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/vps/Docker.sh); pause ;;
-        0) echo -e "\n  ${B_RED}Terminating session...${NC} Goodbye, Nobita."; exit 0 ;;
+        0) echo -e "\n  ${B_RED}Terminating session...${NC} Goodbye, RAJBHAI."; exit 0 ;;
         *) echo -e "  ${B_RED}Error: Input not valid.${NC}"; sleep 0.7 ;;
     esac
 done
