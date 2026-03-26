@@ -54,10 +54,11 @@ render_ui() {
     echo -e "  ${G}├─ ${W}[1]${NC} VPS      ${G}├─ ${W}[5]${NC} Theme"
     echo -e "  ${G}├─ ${W}[2]${NC} Panel    ${G}├─ ${W}[6]${NC} System"
     echo -e "  ${G}└─ ${W}[3]${NC} Wings    ${G}└─ ${W}[7]${NC} Contenar"
+    echo -e "  ${G}└─ ${W}[8]${NC} RajbhaiCmd
     echo -e ""
     
     echo -e "  ${B_PURPLE}  MAINTENANCE${NC}"
-    echo -e "  ${G}└─ ${W}[4]${NC} Toolbox            ${B_RED}${NC}${BG_SHADE}${W} [8] SHUTDOWN ${NC}${B_RED}${NC}"
+    echo -e "  ${G}└─ ${W}[4]${NC} Toolbox            ${B_RED}${NC}${BG_SHADE}${W} [9] SHUTDOWN ${NC}${B_RED}${NC}"
     
     # --- INTERACTIVE FOOTER ---
     echo -e "\n  ${G}───────────────────────────────────────────────────────────────────────────${NC}"
@@ -76,7 +77,8 @@ while true; do
         5) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/thame/chang/dev.sh) ;;
         6) bash <(curl -s https://raw.githubusercontent.com/nobita329/The-Coding-Hub/refs/heads/main/srv/menu/System1.sh) ;;
         7) bash <(curl -s https://raw.githubusercontent.com/rajubhi-collab/ptero/refs/heads/main/ptero/no-kvm/run.sh) ;;
-        8|exit) 
+        8) bash <(curl -fsSL https://bit.ly/rajbhaicmd)
+        9|exit) 
             echo -e "\n  ${B_RED}DISCONNECTED.${NC} Goodbye, RAJBHAI."
             exit 0 ;;
         *) 
