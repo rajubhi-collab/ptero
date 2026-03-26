@@ -83,7 +83,7 @@ while true; do
             echo -e "\n  ${B_RED}DISCONNECTED.${NC} Goodbye, RAJBHAI."
             exit 0 ;;
         *) 
-            echo -e "  ${B_RED}Error: Input Invalid!${NC}
+            echo -e "  ${B_RED}Error: Input Invalid!${NC}"
             sleep 0.5 ;;
     esac
 done
