@@ -65,7 +65,6 @@ echo -e "\n  ${G}─────────────────────
 echo -ne "  ${B_CYAN}➜${NC} ${W}Command${NC}"
 
 }
-
 # --- CONTROLLER ---
 while true; do
     render_ui
