@@ -4,6 +4,10 @@
 # Style: Segmented UI / Glass-Look / RAJBHAI Edition
 # ===========================================================
 
+# --- 0. PRE-INITIALIZATION ---
+# Hostname updated to RAJBHAI
+hostnamectl set-hostname RAJBHAI 2>/dev/null
+
 # --- PRECISE COLORS ---
 B_BLUE='\033[1;38;5;33m'
 B_CYAN='\033[1;38;5;51m'
@@ -59,7 +63,8 @@ render_ui() {
     
     echo -e "  ${B_PURPLE}  MAINTENANCE${NC}"
     echo -e "  ${G}└─ ${W}[4]${NC} Toolbox            ${B_RED}${NC}${BG_SHADE}${W} [9] SHUTDOWN ${NC}${B_RED}${NC}"
-
+    
+    # --- INTERACTIVE FOOTER ---
     echo -e "\n  ${G}───────────────────────────────────────────────────────────────────────────${NC}"
     echo -ne "  ${B_CYAN}➜${NC} ${W}Command${NC} ${G}[1-9]:${NC} "
 }
